@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguro Veicular App+ - Proteção especial para motoristas de aplicativo (Uber, 99, iFood, InDriver). Calcule seu preço online.">
+    <meta name="keywords" content="seguro veicular, motorista aplicativo, uber, 99, ifood, indriver, seguro carro">
+    <meta name="author" content="Amparo+">
+    
+    <title>Seguro Veicular App+ - Proteção para Motoristas de Aplicativo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo-amparo-geral.jpg" alt="Amparo+ Logo" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="index.html#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="index.html#revendedor" class="nav-link">Seja um Revendedor</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                <li><a href="seguro-funerario.html" class="nav-link">Seguro Funerário</a></li>
+                <li><a href="seguro-veicular.html" class="nav-link active">Seguro Veicular</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Seguro Veicular App+</h1>
+                <p>Proteção especial para motoristas de aplicativo. Cobertura pensada para quem trabalha nas ruas com Uber, 99, iFood, InDriver e outros apps.</p>
+                <div class="hero-buttons">
+                    <a href="#calculadora" class="btn btn-whatsapp">
+                        <i class="fas fa-calculator"></i>
+                        Calcular Preço
+                    </a>
+                    <a href="#beneficios" class="btn btn-outline">Ver Benefícios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Apps Atendidos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Proteção para Todos os Apps</h2>
+            <p class="text-center mb-4" style="font-size: 1.1rem; color: var(--gray);">
+                Nosso seguro cobre motoristas que trabalham com os principais aplicativos do mercado
+            </p>
+            
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="card-title">Uber</h3>
+                    <p>Cobertura completa para motoristas Uber</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <h3 class="card-title">99</h3>
+                    <p>Proteção para motoristas da 99</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3 class="card-title">iFood</h3>
+                    <p>Seguro para entregadores iFood</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="card-title">InDriver</h3>
+                    <p>Cobertura para motoristas InDriver</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Preço -->
+    <section id="calculadora" class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Calcule o Preço do Seu Seguro</h2>
+            <p class="text-center mb-4" style="font-size: 1.1rem; color: var(--gray);">
+                Monte seu plano personalizado e veja o valor final em tempo real
+            </p>
+            
+            <div class="calculadora">
+                <h3 style="color: var(--primary-color); margin-bottom: 2rem;">
+                    <i class="fas fa-cog"></i>
+                    Configure Seu Plano
+                </h3>
+                
+                <!-- Seleção de Plano Base -->
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">1. Escolha seu Plano Base:</h4>
+                    
+                    <div class="plano-option" onclick="selecionarPlano(this, 250)">
+                        <input type="radio" name="plano" value="250" data-nome="Plano Básico" class="plano-radio" checked>
+                        <div>
+                            <h5 style="margin: 0; color: var(--primary-color);">Plano Básico - R$ 250</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--gray);">
+                                Cobertura essencial para danos próprios e terceiros
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="plano-option" onclick="selecionarPlano(this, 350)">
+                        <input type="radio" name="plano" value="350" data-nome="Plano Premium" class="plano-radio">
+                        <div>
+                            <h5 style="margin: 0; color: var(--primary-color);">Plano Premium - R$ 350</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--gray);">
+                                Cobertura ampliada com benefícios extras
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coberturas Adicionais -->
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">2. Coberturas Adicionais:</h4>
+                    
+                    <div class="cobertura-checkbox">
+                        <input type="checkbox" id="vidros" value="50" data-nome="Vidros">
+                        <label for="vidros">
+                            <strong>Vidros - R$ 50</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--gray);">Cobertura para quebra de vidros</span>
+                        </label>
+                    </div>
+                    
+                    <div class="cobertura-checkbox">
+                        <input type="checkbox" id="terceiros" value="75" data-nome="Danos a Terceiros">
+                        <label for="terceiros">
+                            <strong>Danos a Terceiros - R$ 75</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--gray);">Proteção ampliada contra terceiros</span>
+                        </label>
+                    </div>
+                    
+                    <div class="cobertura-checkbox">
+                        <input type="checkbox" id="roubo" value="100" data-nome="Roubo e Furto">
+                        <label for="roubo">
+                            <strong>Roubo e Furto - R$ 100</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--gray);">Cobertura contra roubo e furto</span>
+                        </label>
+                    </div>
+                    
+                    <div class="cobertura-checkbox">
+                        <input type="checkbox" id="colisao" value="125" data-nome="Colisão Total">
+                        <label for="colisao">
+                            <strong>Colisão Total - R$ 125</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--gray);">Cobertura para perda total por colisão</span>
+                        </label>
+                    </div>
+                    
+                    <div class="cobertura-checkbox">
+                        <input type="checkbox" id="fenomenos" value="80" data-nome="Fenômenos Naturais">
+                        <label for="fenomenos">
+                            <strong>Fenômenos Naturais - R$ 80</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--gray);">Proteção contra enchentes, granizo, etc.</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Total -->
+                <div class="total-preco">
+                    <h3 style="margin: 0; color: white;">Valor Total Mensal:</h3>
+                    <div class="preco-valor">R$ 250,00</div>
+                    <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">
+                        <i class="fas fa-info-circle"></i>
+                        Valor pode variar conforme perfil do condutor
+                    </p>
+                </div>
+                
+                <!-- Botão de Cotação -->
+                <div class="text-center mt-3">
+                    <button class="btn btn-whatsapp btn-cotacao" style="font-size: 1.1rem; padding: 15px 30px;">
+                        <i class="fab fa-whatsapp"></i>
+                        Solicitar Cotação
+                    </button>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray);">
+                        <i class="fas fa-shield-alt"></i>
+                        Cotação gratuita e sem compromisso
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="section">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Benefícios Exclusivos</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="card-title">Assistência 24h</h3>
+                    <p>Socorro mecânico, elétrico e chaveiro disponível 24 horas por dia em todo o Brasil.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3 class="card-title">Guincho Ilimitado</h3>
+                    <p>Reboque sem limite de quilometragem para oficina credenciada ou local de sua escolha.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="card-title">Carro Reserva</h3>
+                    <p>Veículo substituto enquanto o seu está na oficina, para não parar de trabalhar.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3 class="card-title">Cobertura Médica</h3>
+                    <p>Assistência médica para ocupantes em caso de acidentes durante o trabalho.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="card-title">Assistência Jurídica</h3>
+                    <p>Suporte jurídico especializado para questões relacionadas a acidentes de trânsito.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">App Exclusivo</h3>
+                    <p>Aplicativo para solicitar assistência, acompanhar sinistros e gerenciar sua apólice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Comparativa -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Compare os Planos</h2>
+            
+            <div class="grid grid-2">
+                <!-- Plano Básico -->
+                <div class="card">
+                    <div class="text-center mb-3">
+                        <h3 class="card-title">Plano Básico</h3>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin: 1rem 0;">
+                            R$ 250
+                            <span style="font-size: 1rem; font-weight: 400; color: var(--gray);">/mês</span>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Incluso:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Assistência 24h
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Guincho até 200km
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Socorro mecânico
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Chaveiro
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Troca de pneu
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Pane seca
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Plano Premium -->
+                <div class="card" style="border: 2px solid var(--secondary-color); position: relative;">
+                    <div style="background-color: var(--secondary-color); color: var(--primary-color); padding: 0.5rem 1rem; border-radius: 20px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-weight: 600;">
+                        Recomendado
+                    </div>
+                    
+                    <div class="text-center mb-3">
+                        <h3 class="card-title">Plano Premium</h3>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin: 1rem 0;">
+                            R$ 350
+                            <span style="font-size: 1rem; font-weight: 400; color: var(--gray);">/mês</span>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Tudo do Básico +:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Guincho ilimitado
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Carro reserva 7 dias
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Assistência médica
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Assistência jurídica
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            App exclusivo
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Desconto em peças
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">O que Dizem Nossos Clientes</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="margin-bottom: 1rem;">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "Excelente atendimento! Quando meu carro quebrou durante uma corrida, o guincho chegou em 20 minutos. Recomendo!"
+                    </p>
+                    <div style="font-weight: 600; color: var(--primary-color);">
+                        João Silva - Motorista Uber
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div style="margin-bottom: 1rem;">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "O carro reserva salvou minha semana! Não parei de trabalhar nem um dia enquanto o meu estava na oficina."
+                    </p>
+                    <div style="font-weight: 600; color: var(--primary-color);">
+                        Maria Santos - Motorista 99
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div style="margin-bottom: 1rem;">
+                        <div style="color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1rem;">
+                        "Preço justo e cobertura completa. Finalmente um seguro que entende as necessidades dos motoristas de app."
+                    </p>
+                    <div style="font-weight: 600; color: var(--primary-color);">
+                        Carlos Oliveira - Entregador iFood
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, #2c4a6b 100%); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Proteja Seu Trabalho e Sua Renda</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+                Não deixe imprevistos pararem seu trabalho. Tenha a proteção que você merece.
+            </p>
+            
+            <a href="#calculadora" class="btn btn-whatsapp" style="font-size: 1.2rem; padding: 15px 30px;">
+                <i class="fas fa-calculator"></i>
+                Calcular Meu Seguro
+            </a>
+            
+            <p style="margin-top: 1.5rem; opacity: 0.8;">
+                <i class="fas fa-shield-alt"></i>
+                Cotação gratuita • Sem compromisso • Atendimento especializado
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amparo+</h3>
+                    <p>Seguros que protegem você e sua família com transparência, agilidade e atendimento humanizado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Nossos Seguros</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="seguro-funerario.html" class="footer-link">Seguro Funerário</a></li>
+                        <li><a href="seguro-veicular.html" class="footer-link">Seguro Veicular App+</a></li>
+                        <li><a href="index.html#revendedor" class="footer-link">Seja um Revendedor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Atendimento</h3>
+                    <ul style="list-style: none;">
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@amparomais.com.br</li>
+                        <li><i class="fas fa-clock"></i> 24h todos os dias</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" class="footer-link">Página Inicial</a></li>
+                        <li><a href="index.html#contato" class="footer-link">Contato</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amparo+. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- JavaScript específico para a calculadora -->
+    <script>
+        function selecionarPlano(elemento, valor) {
+            // Remove seleção anterior
+            document.querySelectorAll('.plano-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Adiciona seleção ao elemento clicado
+            elemento.classList.add('selected');
+            
+            // Marca o radio button
+            const radio = elemento.querySelector('input[type="radio"]');
+            radio.checked = true;
+            
+            // Atualiza o preço
+            updatePreco();
+        }
+        
+        // Inicializar com o primeiro plano selecionado
+        document.addEventListener('DOMContentLoaded', function() {
+            const primeiroPlano = document.querySelector('.plano-option');
+            if (primeiroPlano) {
+                primeiroPlano.classList.add('selected');
+            }
+        });
+    </script>
+</body>
+</html>
+

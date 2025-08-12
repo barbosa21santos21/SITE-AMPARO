@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguro Funerário Amparo+ - Assistência funerária completa com planos a partir de R$ 24,90/mês. Proteção para toda a família.">
+    <meta name="keywords" content="seguro funerário, assistência funerária, plano funeral, amparo, família">
+    <meta name="author" content="Amparo+">
+    
+    <title>Seguro Funerário Amparo+ - Proteção para Toda a Família</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo-amparo-geral.jpg" alt="Amparo+ Logo" class="logo">
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="index.html#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="index.html#revendedor" class="nav-link">Seja um Revendedor</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                <li><a href="seguro-funerario.html" class="nav-link active">Seguro Funerário</a></li>
+                <li><a href="seguro-veicular.html" class="nav-link">Seguro Veicular</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Seguro Funerário Amparo+</h1>
+                <p>Assistência funerária completa para proteger sua família nos momentos mais difíceis. Planos acessíveis com cobertura nacional e atendimento 24h.</p>
+                <div class="hero-buttons">
+                    <button onclick="contatarSeguroFunerario('essencial')" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        Contratar Agora
+                    </button>
+                    <a href="#planos" class="btn btn-outline">Ver Planos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Por que Escolher o Seguro Funerário Amparo+?</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="card-title">Atendimento 24h</h3>
+                    <p>Suporte disponível a qualquer hora, todos os dias da semana, para quando você mais precisa.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="card-title">Cobertura Nacional</h3>
+                    <p>Assistência em todo território nacional, independente de onde você esteja.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="card-title">Sem Burocracia</h3>
+                    <p>Processo simples e rápido, sem complicações na hora que você precisa.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="card-title">Proteção Familiar</h3>
+                    <p>Planos que cobrem toda a família com carinho e atenção personalizada.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">Empresa Confiável</h3>
+                    <p>Tradição e confiabilidade para garantir tranquilidade em momentos difíceis.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="card-title">Atendimento Humanizado</h3>
+                    <p>Equipe especializada em oferecer suporte emocional e prático.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Planos -->
+    <section id="planos" class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Nossos Planos</h2>
+            <p class="text-center mb-4" style="font-size: 1.1rem; color: var(--gray);">
+                Escolha o plano ideal para proteger você e sua família
+            </p>
+            
+            <div class="grid grid-2">
+                <!-- Plano Essencial -->
+                <div class="card" style="border: 2px solid var(--primary-color); position: relative;">
+                    <div style="background-color: var(--primary-color); color: white; padding: 0.5rem 1rem; border-radius: 20px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-weight: 600;">
+                        Mais Popular
+                    </div>
+                    
+                    <div class="text-center mb-3">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="card-title">Plano Essencial</h3>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin: 1rem 0;">
+                            R$ 24,90
+                            <span style="font-size: 1rem; font-weight: 400; color: var(--gray);">/mês</span>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Cobertura Inclusa:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Titular do plano
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Atendimento 24h
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Cobertura nacional
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Assistência completa
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Documentação inclusa
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Translado quando necessário
+                        </li>
+                    </ul>
+                    
+                    <button onclick="contatarSeguroFunerario('essencial')" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i>
+                        Contratar Plano Essencial
+                    </button>
+                </div>
+                
+                <!-- Plano Família -->
+                <div class="card">
+                    <div class="text-center mb-3">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Plano Família</h3>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin: 1rem 0;">
+                            R$ 35,00
+                            <span style="font-size: 1rem; font-weight: 400; color: var(--gray);">/mês</span>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Cobertura Inclusa:</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Titular + cônjuge + filhos
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Atendimento 24h
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Cobertura nacional
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Assistência completa
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Documentação inclusa
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Translado quando necessário
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                            Suporte psicológico
+                        </li>
+                    </ul>
+                    
+                    <button onclick="contatarSeguroFunerario('familia')" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i>
+                        Contratar Plano Família
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios Detalhados -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">O que está Incluído</h2>
+            
+            <div class="grid grid-2">
+                <div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">
+                        <i class="fas fa-list-check"></i>
+                        Serviços Inclusos
+                    </h3>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--secondary-color);">Assistência Completa</h4>
+                        <ul style="margin-left: 1rem;">
+                            <li>Remoção e translado do corpo</li>
+                            <li>Preparação e conservação</li>
+                            <li>Fornecimento de urna</li>
+                            <li>Ornamentação básica</li>
+                            <li>Velório por 24 horas</li>
+                            <li>Sepultamento ou cremação</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--secondary-color);">Documentação</h4>
+                        <ul style="margin-left: 1rem;">
+                            <li>Certidão de óbito</li>
+                            <li>Liberação do corpo</li>
+                            <li>Documentos do cartório</li>
+                            <li>Registros necessários</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--secondary-color);">Suporte Adicional</h4>
+                        <ul style="margin-left: 1rem;">
+                            <li>Atendimento psicológico (Plano Família)</li>
+                            <li>Orientação jurídica básica</li>
+                            <li>Suporte administrativo</li>
+                            <li>Acompanhamento familiar</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">
+                        <i class="fas fa-info-circle"></i>
+                        Informações Importantes
+                    </h3>
+                    
+                    <div style="background-color: var(--light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <h4 style="color: var(--secondary-color);">Carências</h4>
+                        <ul style="margin-left: 1rem;">
+                            <li><strong>Morte natural:</strong> 30 dias</li>
+                            <li><strong>Morte acidental:</strong> Sem carência</li>
+                            <li><strong>Suicídio:</strong> 24 meses</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background-color: #fff3cd; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--secondary-color); margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color);">Exclusões</h4>
+                        <ul style="margin-left: 1rem; font-size: 0.9rem;">
+                            <li>Morte por atos de guerra</li>
+                            <li>Participação em atos criminosos</li>
+                            <li>Uso de substâncias ilícitas</li>
+                            <li>Esportes radicais sem cobertura</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background-color: #d1ecf1; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-color);">
+                        <h4 style="color: var(--primary-color);">Vantagens Especiais</h4>
+                        <ul style="margin-left: 1rem;">
+                            <li>Primeira mensalidade grátis</li>
+                            <li>Desconto para pagamento anual</li>
+                            <li>Sem reajuste no primeiro ano</li>
+                            <li>Cancelamento sem multa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Perguntas Frequentes -->
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Perguntas Frequentes</h2>
+            
+            <div class="grid grid-2">
+                <div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Como funciona a contratação?
+                        </h4>
+                        <p>A contratação é simples e rápida. Entre em contato conosco pelo WhatsApp, preencha os dados básicos e sua proteção estará ativa em até 24 horas.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Posso usar em qualquer lugar do Brasil?
+                        </h4>
+                        <p>Sim! Nossa cobertura é nacional. Independente de onde você esteja no Brasil, terá acesso aos nossos serviços.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Como funciona o atendimento 24h?
+                        </h4>
+                        <p>Temos uma central de atendimento disponível 24 horas por dia, 7 dias por semana. Basta ligar para nosso número de emergência.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Posso cancelar quando quiser?
+                        </h4>
+                        <p>Sim, você pode cancelar seu plano a qualquer momento sem multa ou taxa de cancelamento.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Qual a diferença entre os planos?
+                        </h4>
+                        <p>O Plano Essencial cobre apenas o titular, enquanto o Plano Família cobre titular, cônjuge e filhos, além de incluir suporte psicológico.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                            <i class="fas fa-question-circle"></i>
+                            Como é feito o pagamento?
+                        </h4>
+                        <p>O pagamento é mensal via boleto bancário, cartão de crédito ou débito automático. Você escolhe a forma mais conveniente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, #2c4a6b 100%); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Proteja Sua Família Hoje Mesmo</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+                Não deixe para depois. A proteção que sua família merece está a um clique de distância.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button onclick="contatarSeguroFunerario('essencial')" class="btn btn-whatsapp" style="font-size: 1.1rem; padding: 15px 30px;">
+                    <i class="fab fa-whatsapp"></i>
+                    Contratar Plano Essencial
+                </button>
+                <button onclick="contatarSeguroFunerario('familia')" class="btn" style="background-color: var(--secondary-color); color: var(--primary-color); font-size: 1.1rem; padding: 15px 30px;">
+                    <i class="fas fa-users"></i>
+                    Contratar Plano Família
+                </button>
+            </div>
+            
+            <p style="margin-top: 1.5rem; opacity: 0.8;">
+                <i class="fas fa-shield-alt"></i>
+                Primeira mensalidade grátis • Sem carência para acidentes • Atendimento 24h
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amparo+</h3>
+                    <p>Seguros que protegem você e sua família com transparência, agilidade e atendimento humanizado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Nossos Seguros</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="seguro-funerario.html" class="footer-link">Seguro Funerário</a></li>
+                        <li><a href="seguro-veicular.html" class="footer-link">Seguro Veicular App+</a></li>
+                        <li><a href="index.html#revendedor" class="footer-link">Seja um Revendedor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Atendimento</h3>
+                    <ul style="list-style: none;">
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@amparomais.com.br</li>
+                        <li><i class="fas fa-clock"></i> 24h todos os dias</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" class="footer-link">Página Inicial</a></li>
+                        <li><a href="index.html#contato" class="footer-link">Contato</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amparo+. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
