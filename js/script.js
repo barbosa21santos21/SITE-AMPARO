@@ -2,13 +2,14 @@
 const CONFIG = {
 whatsappNumber: '5527999848735', // Número do WhatsApp da empresa (substituir pelo real)
  planos: {
-    basico: 250,
-    premium: 350
-},
+planos: {
+    basico: 220,  // Novo valor do plano básico
+    premium: 350  // Novo valor do plano premium
+},    
 coberturas: {
-    vidros: 50,
+    vidros: 30,
     terceiros: 75,
-    roubo: 100,
+    roubo: 120,
     colisao: 90,
     fenomenos: 40
 }
