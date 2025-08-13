@@ -1,6 +1,6 @@
 // Configurações globais
 const CONFIG = {
-    whatsappNumber: '27999848735', // Número do WhatsApp da empresa (substituir pelo real)
+whatsappNumber: '5527999848735', // Número do WhatsApp da empresa (substituir pelo real)
     planos: {
         basico: 190,
         premium: 260
